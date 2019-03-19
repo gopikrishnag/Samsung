@@ -1,0 +1,22 @@
+<cdk-virtual-scroll-viewport itemSize="10" style="height: 200px;" >
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Code</th>
+      <th>Serial No</th>
+    </tr>
+  </thead>
+  <tbody>
+       
+          <tr *cdkVirtualFor="let result of products ; ">
+              <td>{{result.id}} </td>
+              <td> {{result.productName}}</td>
+              <td>{{result.modelCode}}</td>
+              <td>{{result.serialNumber}}</td>
+            </tr>
+   
+  </tbody>
+</table>
+</cdk-virtual-scroll-viewport>
